@@ -1,0 +1,8 @@
+chr2	494	C	S	+
+chr2	1056	T	Y	+
+chr2	1587	-	TC	-
+chr3	282	G	C	-
+chr3	494	C	T	-
+chr3	601	A	W	+
+chr4	83	G	K	+
+chr4	268	A	W	+

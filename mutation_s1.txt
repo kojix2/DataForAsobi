@@ -1,0 +1,6 @@
+chr1	736	C	A	-
+chr1	1522	C	Y	+
+chr2	691	C	Y	+
+chr3	946	C	M	+
+chr4	1079	A	G	-
+chr5	173	T	K	+
