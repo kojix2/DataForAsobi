@@ -1,6 +1,8 @@
 # テストデータ
 
-## 架空のリファレンスゲノムの生成
+## リファレンスゲノム
+
+架空のリファレンスゲノムを生成した。
 
 ```python
 import random
@@ -50,3 +52,13 @@ bgzipによる圧縮
 bgzip s*.fa
 ```
 
+## 正常のサンプル
+
+|name|read|file|
+|----|----|----|
+|S1|read1|s1_1.fa.gz|
+|S1|read2|s1_2.fa.gz|
+|S2|read1|s2_1.fa.gz|
+|S2|read2|s2_2.fa.gz|
+|S3|read1|s3_1.fa.gz|
+|S3|read2|s3_2.fa.gz|
