@@ -134,6 +134,9 @@ bwa mem -R $TAG ref.fa s1_1.fa.gz s1_2.fa.gz | samtools sort -o s1.sorted.bam
 
 ## bcftools
 
+bcftools mpileup -O v -f ref.fa s*.sorted.bam > s123_genotypes.vcf
+bcftools call -vm -Ov s123_genotypes.vcf | bcftools norm -Ov -f ref.fa -d all - > s123_variants.vcf
+
 ## freebayes
 
 ## mosdepth
