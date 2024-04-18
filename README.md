@@ -30,11 +30,30 @@ for chromosome, length in chromosomes.items():
 python generate_reference.py > ref.fa
 ```
 
+bgzip による圧縮
+
+```
+bgzip -k ref.fa
+```
+
+faidx を作る
+
+```
+samtools faidx ref.fa
+```
+
 bwa のインデックスを作る
 
 ```
 bwa index ref.fa
 ```
+
+2bit ファイルを作る
+
+```
+faToTwoBit ref.fa ref.2bit
+```
+
 
 ## 突然変異とショートリードのシミュレーション
 
