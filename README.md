@@ -132,6 +132,10 @@ bwa mem -R $TAG ref.fa s1_1.fa.gz s1_2.fa.gz | samtools sort -o s1.sorted.bam
 
 みたいな感じ
 
+## bcftools
+
+## freebayes
+
 ## mosdepth
 
 quantile すごい
