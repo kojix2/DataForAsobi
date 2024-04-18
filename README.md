@@ -122,3 +122,20 @@ bgzip s*.fa
 | chr3 | 601  | A   | W   | +      |
 | chr4 | 83   | G   | K   | +      |
 | chr4 | 268  | A   | W   | +      |
+
+## alignment
+
+```
+TAG="@RG\tID:S1\tSM:S1\tLB:S1"
+bwa mem -R $TAG ref.fa s1_1.fa.gz s1_2.fa.gz | samtools sort -o s1.sorted.bam
+```
+
+みたいな感じ
+
+## mosdepth
+
+quantile すごい
+
+```
+mosdepth -q 0:1:4:100:200: s1 s1.sorted.bam
+```
